@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "sidebar": {
+    "role": "Full Stack Developer",
+    "collapse": "Collapse menu",
+    "expand": "Expand menu",
+    "language": "Change language",
+    "theme": "Change theme"
+  },
+  "about": {
+    "hello": "Hi 👋",
+    "iam": "I'm {{name}}",
+    "location": "Morocco",
+    "aboutStrong": "A little",
+    "aboutRest": "about me...",
+    "bio1": "Full Stack Developer with over 2 years of experience, specialized in <hl>Symfony</hl>, <hl>React</hl> and <hl>Node.js</hl>. I have built web applications and hospital information systems (HIS) using REST APIs, PostgreSQL and MongoDB, with a focus on high-performance, scalable solutions.",
+    "bio2": "Curious, rigorous and always eager to learn, I adapt quickly to new technologies and commit fully to ambitious projects within dynamic teams.",
+    "interestsStrong": "Personal",
+    "interestsRest": "interests"
+  },
+  "skills": {
+    "titleStrong": "Technical",
+    "titleRest": "skills",
+    "categories": {
+      "languages": "Languages",
+      "frameworks": "Frameworks & UI",
+      "databases": "Databases",
+      "api": "API & Back-End",
+      "devops": "DevOps & Tools",
+      "methods": "Methods"
+    },
+    "langsStrong": "Spoken",
+    "langsRest": "languages",
+    "langNames": { "arabic": "Arabic", "french": "French", "english": "English" },
+    "levels": { "native": "Native", "intermediate": "Intermediate", "fluent": "Fluent" },
+    "qualitiesStrong": "Personal",
+    "qualitiesRest": "qualities",
+    "qualities": {
+      "communication": "Communication",
+      "problemSolving": "Problem solving",
+      "adaptability": "Adaptability",
+      "autonomy": "Autonomy",
+      "fastLearner": "Fast learner"
+    }
+  },
+  "projects": {
+    "titleStrong": "My",
+    "titleRest": "projects",
+    "items": {
+      "his": {
+        "title": "Hospital Information System (HIS)",
+        "description": "Development and maintenance of an HIS used by several healthcare facilities to manage medical, administrative and hospital processes.",
+        "points": [
+          "New features with PHP, Symfony and Mediboard",
+          "Development and maintenance of REST APIs",
+          "User interfaces with Smarty and Bootstrap",
+          "Business modules built with the functional teams",
+          "SQL query and PostgreSQL performance optimization",
+          "Corrective and evolutive maintenance, code reviews, Scrum"
+        ]
+      },
+      "consolidation": {
+        "title": "Hospital data consolidation platform",
+        "description": "Platform that centralizes data from several healthcare facilities into a single database to ensure consistency, availability and reliability.",
+        "points": [
+          "Services to extract, integrate and synchronize data coming from several HIS",
+          "Features built with Symfony, Doctrine ORM and React.js",
+          "PostgreSQL replication for high availability",
+          "Asynchronous processing (queuing) and extraction workload spread across Read Replicas",
+          "Deployment and maintenance on Docker and Ubuntu"
+        ]
+      },
+      "nabadypro": {
+        "title": "NabadyPro Card",
+        "description": "Card management web application, built full stack with the MERN stack.",
+        "points": [
+          "Application built with React.js and Tailwind CSS",
+          "REST API with Node.js and Express.js",
+          "MongoDB database design and CRUD features",
+          "Contribution to Front-End / Back-End integration"
+        ]
+      },
+      "nabadybot": {
+        "title": "NabadyBot",
+        "description": "Multilingual chatbot (Darija, French and other languages).",
+        "points": [
+          "Interface built with React.js",
+          "Bootstrap integration",
+          "User experience optimization"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "titleStrong": "Professional",
+    "titleRest": "experience",
+    "jobs": {
+      "cdi": {
+        "role": "Full Stack Developer (permanent contract)",
+        "period": "September 2024 – Present",
+        "points": [
+          "Development and maintenance of a Hospital Information System (HIS) with PHP, Symfony and Mediboard",
+          "Contribution to a hospital data consolidation platform (Symfony, Doctrine ORM, React.js)",
+          "PostgreSQL optimization, replication and asynchronous processing",
+          "Deployment and maintenance on Docker and Ubuntu, Agile methodology (Scrum)"
+        ]
+      },
+      "internship": {
+        "role": "Full Stack pre-hire internship",
+        "period": "May 2024 – August 2024",
+        "points": [
+          "NabadyPro Card: React.js, Tailwind CSS, Node.js / Express.js REST API, MongoDB, CRUD",
+          "NabadyBot: multilingual chatbot (Darija, French and others), React.js and Bootstrap interface"
+        ]
+      },
+      "mern": {
+        "role": "MERN Developer internship",
+        "period": "February 2024 – June 2024",
+        "points": [
+          "MERN application development: React.js Front-End, Node.js and Express.js Back-End",
+          "REST API creation and MongoDB database management",
+          "Performance optimization, maintenance and bug fixing"
+        ]
+      }
+    }
+  },
+  "education": {
+    "titleStrong": "Academic",
+    "titleRest": "background",
+    "items": {
+      "mern": { "title": "MERN Full Stack", "description": "Certified training." },
+      "school1337": {
+        "title": "Short course at 1337 school",
+        "description": "Intensive introduction to software development and the 42 methodology."
+      },
+      "ista": {
+        "title": "Specialized Technician in software development",
+        "description": "Specialized Technician diploma."
+      },
+      "bac": { "title": "Baccalaureate, Physics and Chemistry" }
+    }
+  },
+  "contact": {
+    "titleStrong": "Get in",
+    "titleRest": "touch",
+    "intro": "A project, an opportunity or just a question? Write to me, I'm happy to reply.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "locationValue": "Oulfa, Casablanca, Morocco"
+  }
+}

@@ -1,9 +1,0 @@
-import React from 'react'
-
-export default function Experince() {
-  return (
-    <div className='text-3xl text-center'>
-      Experience
-    </div>
-  )
-}

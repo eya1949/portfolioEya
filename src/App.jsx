@@ -4,7 +4,7 @@ import Nav from "./Components/Nav";
 export default function App() {
   return (
     <div className='bg-victoria-100'>
-      {/* <Nav /> */}
+      <Nav /> 
       <Mouse/>
     </div>
 

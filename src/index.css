@@ -7,6 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;  /* old Edge / IE */
+  scrollbar-width: none;     /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, new Edge */
+}
 /* ── LOUBAG ── */
 @font-face {
     font-family: 'Loubag';
