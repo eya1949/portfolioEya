@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { GraduationCap, UserCircle, BriefcaseBusiness, PenSquare, Wrench, Medal } from 'lucide-react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
@@ -40,18 +41,19 @@ function AnimatedRoutes() {
 }
 
 export default function Nav() {
+  const { t } = useTranslation();
+
   return (
     <Router>
-      {/* reducedMotion="user" : respecte le réglage « réduire les animations » du système */}
       <MotionConfig reducedMotion="user">
         <div className="flex h-screen overflow-hidden">
           <Menu>
-            <SidebarItem to="/" icon={<UserCircle size={26} />} text="À propos" />
-            <SidebarItem to="/education" icon={<GraduationCap size={26} />} text="Éducation" />
-            <SidebarItem to="/capacites" icon={<Wrench size={26} />} text="Capacités" />
-            <SidebarItem to="/experience" icon={<BriefcaseBusiness size={26} />} text="Expérience" />
-            <SidebarItem to="/realisation" icon={<Medal size={26} />} text="Réalisations" />
-            <SidebarItem to="/contact" icon={<PenSquare size={26} />} text="Contact" />
+            <SidebarItem to="/" icon={<UserCircle size={26} />} text={t('nav.about')} />
+            <SidebarItem to="/education" icon={<GraduationCap size={26} />} text={t('nav.education')} />
+            <SidebarItem to="/capacites" icon={<Wrench size={26} />} text={t('nav.skills')} />
+            <SidebarItem to="/experience" icon={<BriefcaseBusiness size={26} />} text={t('nav.experience')} />
+            <SidebarItem to="/realisation" icon={<Medal size={26} />} text={t('nav.projects')} />
+            <SidebarItem to="/contact" icon={<PenSquare size={26} />} text={t('nav.contact')} />
           </Menu>
 
           <main className="flex-1 min-w-0 h-screen p-4 overflow-hidden">

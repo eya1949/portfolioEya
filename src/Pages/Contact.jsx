@@ -1,33 +1,40 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 import PageLayout from '../Components/PageLayout';
 import SectionTitle from '../Components/SectionTitle';
 import Reveal from '../Components/Reveal';
 
 const contacts = [
-  { icon: Mail, label: 'Email', value: 'ayabcr.dev@gmail.com', href: 'mailto:ayabcr.dev@gmail.com' },
-  { icon: Phone, label: 'Téléphone', value: '+212 680 084 122', href: 'tel:+212680084122' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'Aya Bacharou', href: 'https://www.linkedin.com/in/aya-bacharou/', external: true },
-  { icon: Github, label: 'GitHub', value: '@eya1949', href: 'https://github.com/eya1949', external: true },
-  { icon: MapPin, label: 'Localisation', value: 'Oulfa, Casablanca, Maroc' },
+  { id: 'email', icon: Mail, labelKey: 'contact.email', value: 'ayabcr.dev@gmail.com', href: 'mailto:ayabcr.dev@gmail.com' },
+  { id: 'phone', icon: Phone, labelKey: 'contact.phone', value: '+212 680 084 122', href: 'tel:+212680084122' },
+  { id: 'linkedin', icon: Linkedin, label: 'LinkedIn', value: 'Aya Bacharou', href: 'https://www.linkedin.com/in/aya-bacharou/', external: true },
+  { id: 'github', icon: Github, label: 'GitHub', value: '@eya1949', href: 'https://github.com/eya1949', external: true },
+  { id: 'location', icon: MapPin, labelKey: 'contact.location', valueKey: 'contact.locationValue' },
 ];
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <PageLayout>
-      <Reveal><SectionTitle strong="Me">contacter</SectionTitle></Reveal>
-      <Reveal><p className="text-victoria-800 leading-7">
-        Un projet, une opportunité ou une simple question ? Écrivez-moi, je réponds avec plaisir.
-      </p></Reveal>
+      <Reveal>
+        <SectionTitle strong={t('contact.titleStrong')}>{t('contact.titleRest')}</SectionTitle>
+      </Reveal>
+      <Reveal>
+        <p className="text-victoria-800 leading-7">{t('contact.intro')}</p>
+      </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {contacts.map(({ icon: Icon, label, value, href, external }, i) => {
+        {contacts.map(({ id, icon: Icon, label, labelKey, value, valueKey, href, external }, i) => {
           const content = (
             <>
               <Icon size={24} className="text-hawkes-blue-600 shrink-0" />
               <div className="min-w-0">
-                <p className="text-sm text-victoria-700">{label}</p>
-                <p className="font-semibold text-victoria-900 break-words">{value}</p>
+                <p className="text-sm text-victoria-700">{labelKey ? t(labelKey) : label}</p>
+                <p className="font-semibold text-victoria-900 break-words">
+                  <bdi>{valueKey ? t(valueKey) : value}</bdi>
+                </p>
               </div>
             </>
           );
@@ -41,12 +48,10 @@ export default function Contact() {
               {content}
             </a>
           ) : (
-            <div className={base}>
-              {content}
-            </div>
+            <div className={base}>{content}</div>
           );
           return (
-            <Reveal key={label} index={i}>
+            <Reveal key={id} index={i}>
               {card}
             </Reveal>
           );
