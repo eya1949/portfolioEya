@@ -20,10 +20,14 @@
     "location": "Morocco",
     "aboutStrong": "A little",
     "aboutRest": "about me...",
-    "bio1": "Full Stack Developer with over 2 years of experience, specialized in <hl>Symfony</hl>, <hl>React</hl> and <hl>Node.js</hl>. I have built web applications and hospital information systems (HIS) using REST APIs, PostgreSQL and MongoDB, with a focus on high-performance, scalable solutions.",
-    "bio2": "Curious, rigorous and always eager to learn, I adapt quickly to new technologies and commit fully to ambitious projects within dynamic teams.",
+    "bio1": "Full Stack Developer with over 2 years of professional experience in developing and maintaining web applications and hospital information systems (HIS).",
+    "bio2": "I mainly work on back-end development with <hl>PHP</hl> and <hl>Symfony</hl>, as well as front-end development with <hl>React.js</hl>. I also have experience building MERN applications, creating REST APIs and managing PostgreSQL and MongoDB databases.",
     "interestsStrong": "Personal",
-    "interestsRest": "interests"
+    "interestsRest": "interests",
+    "tagline": "I turn real needs into reliable applications.",
+    "downloadCv": "Download my resume",
+    "bio3": "My experience has allowed me to work on business applications, hospital data consolidation, Front-End / Back-End integration and performance optimization.",
+    "bio4": "Rigorous, autonomous and highly adaptable, I want to keep growing in Full Stack development and contribute to concrete technical projects."
   },
   "skills": {
     "titleStrong": "Technical",
@@ -38,8 +42,16 @@
     },
     "langsStrong": "Spoken",
     "langsRest": "languages",
-    "langNames": { "arabic": "Arabic", "french": "French", "english": "English" },
-    "levels": { "native": "Native", "intermediate": "Intermediate", "fluent": "Fluent" },
+    "langNames": {
+      "arabic": "Arabic",
+      "french": "French",
+      "english": "English"
+    },
+    "levels": {
+      "native": "Native",
+      "intermediate": "Intermediate",
+      "fluent": "Fluent"
+    },
     "qualitiesStrong": "Personal",
     "qualitiesRest": "qualities",
     "qualities": {
@@ -135,7 +147,10 @@
     "titleStrong": "Academic",
     "titleRest": "background",
     "items": {
-      "mern": { "title": "MERN Full Stack", "description": "Certified training." },
+      "mern": {
+        "title": "MERN Full Stack",
+        "description": "Certified training."
+      },
       "school1337": {
         "title": "Short course at 1337 school",
         "description": "Intensive introduction to software development and the 42 methodology."
@@ -144,7 +159,9 @@
         "title": "Specialized Technician in software development",
         "description": "Specialized Technician diploma."
       },
-      "bac": { "title": "Baccalaureate, Physics and Chemistry" }
+      "bac": {
+        "title": "Baccalaureate, Physics and Chemistry"
+      }
     }
   },
   "contact": {

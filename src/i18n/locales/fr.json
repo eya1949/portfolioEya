@@ -20,10 +20,14 @@
     "location": "Maroc",
     "aboutStrong": "Un peu",
     "aboutRest": "à propos de moi...",
-    "bio1": "Développeuse Full Stack avec plus de 2 ans d’expérience, spécialisée en <hl>Symfony</hl>, <hl>React</hl> et <hl>Node.js</hl>. J’ai développé des applications web et des systèmes d’information hospitaliers (HIS), avec des API REST, PostgreSQL et MongoDB, dans le but de concevoir des solutions performantes et évolutives.",
-    "bio2": "Curieuse, rigoureuse et toujours prête à apprendre, je m’adapte rapidement aux nouvelles technologies et m’investis pleinement dans les projets ambitieux au sein d’équipes dynamiques.",
+    "bio1": "Développeuse Full Stack avec plus de 2 ans d’expérience professionnelle dans le développement et la maintenance d’applications web et de systèmes d’information hospitaliers (HIS).",
+    "bio2": "J’interviens principalement sur le développement back-end avec <hl>PHP</hl> et <hl>Symfony</hl>, ainsi que sur le front-end avec <hl>React.js</hl>. J’ai également une expérience dans le développement d’applications MERN, la création d’API REST et la gestion de bases de données PostgreSQL et MongoDB.",
     "interestsStrong": "Intérêts",
-    "interestsRest": "personnels"
+    "interestsRest": "personnels",
+    "tagline": "Je transforme des besoins concrets en applications fiables.",
+    "downloadCv": "Télécharger mon CV",
+    "bio3": "Mon expérience m’a permis de travailler sur des applications métier, la consolidation de données hospitalières, l’intégration Front-End / Back-End et l’optimisation des performances.",
+    "bio4": "Rigoureuse, autonome et dotée d’une bonne capacité d’adaptation, je souhaite continuer à évoluer dans le développement Full Stack et contribuer à des projets techniques concrets."
   },
   "skills": {
     "titleStrong": "Compétences",
@@ -38,8 +42,16 @@
     },
     "langsStrong": "Langues",
     "langsRest": "parlées",
-    "langNames": { "arabic": "Arabe", "french": "Français", "english": "Anglais" },
-    "levels": { "native": "Langue maternelle", "intermediate": "Intermédiaire", "fluent": "Courant" },
+    "langNames": {
+      "arabic": "Arabe",
+      "french": "Français",
+      "english": "Anglais"
+    },
+    "levels": {
+      "native": "Langue maternelle",
+      "intermediate": "Intermédiaire",
+      "fluent": "Courant"
+    },
     "qualitiesStrong": "Qualités",
     "qualitiesRest": "personnelles",
     "qualities": {
@@ -135,7 +147,10 @@
     "titleStrong": "Parcours",
     "titleRest": "académique",
     "items": {
-      "mern": { "title": "MERN Full Stack", "description": "Formation certifiée." },
+      "mern": {
+        "title": "MERN Full Stack",
+        "description": "Formation certifiée."
+      },
       "school1337": {
         "title": "Formation courte à l'école 1337",
         "description": "Initiation intensive au développement informatique et à la méthodologie 42."
@@ -144,7 +159,9 @@
         "title": "Technicien Spécialisé en développement informatique",
         "description": "Diplôme de Technicien Spécialisé."
       },
-      "bac": { "title": "Baccalauréat, Physique et Chimie" }
+      "bac": {
+        "title": "Baccalauréat, Physique et Chimie"
+      }
     }
   },
   "contact": {
