@@ -25,7 +25,7 @@ export default function Experience() {
         <SectionTitle strong={t('experience.titleStrong')}>{t('experience.titleRest')}</SectionTitle>
       </Reveal>
 
-      <ol className="relative border-s-2 border-victoria-700/30 ms-3 space-y-8">
+      <ol className="relative border-s-2 border-victoria-700/30 dark:border-white/20 ms-3 space-y-8">
         {jobs.map(({ id, company, tech }, i) => {
           const points = t(`experience.jobs.${id}.points`, { returnObjects: true });
           return (
@@ -33,13 +33,13 @@ export default function Experience() {
               <span className="absolute -start-[17px] flex items-center justify-center w-8 h-8 rounded-full bg-hawkes-blue-600 text-white">
                 <BriefcaseBusiness size={16} />
               </span>
-              <Reveal index={i} className="bg-white/50 rounded-xl p-5 flex flex-col gap-3">
+              <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-5 flex flex-col gap-3">
                 <div>
-                  <h2 className="text-xl font-bold text-victoria-900">{t(`experience.jobs.${id}.role`)}</h2>
-                  <p className="text-hawkes-blue-700 font-medium">{company}</p>
-                  <p className="text-sm text-victoria-700">{t(`experience.jobs.${id}.period`)}</p>
+                  <h2 className="text-xl font-bold text-victoria-900 dark:text-victoria-50">{t(`experience.jobs.${id}.role`)}</h2>
+                  <p className="text-hawkes-blue-700 dark:text-hawkes-blue-300 font-medium">{company}</p>
+                  <p className="text-sm text-victoria-700 dark:text-victoria-300">{t(`experience.jobs.${id}.period`)}</p>
                 </div>
-                <ul className="list-disc ps-5 space-y-1 text-victoria-800">
+                <ul className="list-disc ps-5 space-y-1 text-victoria-800 dark:text-victoria-200">
                   {points.map((p) => (
                     <li key={p}>{p}</li>
                   ))}

@@ -22,28 +22,28 @@ export default function Contact() {
         <SectionTitle strong={t('contact.titleStrong')}>{t('contact.titleRest')}</SectionTitle>
       </Reveal>
       <Reveal>
-        <p className="text-victoria-800 leading-7">{t('contact.intro')}</p>
+        <p className="text-victoria-800 dark:text-victoria-200 leading-7">{t('contact.intro')}</p>
       </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {contacts.map(({ id, icon: Icon, label, labelKey, value, valueKey, href, external }, i) => {
           const content = (
             <>
-              <Icon size={24} className="text-hawkes-blue-600 shrink-0" />
+              <Icon size={24} className="text-hawkes-blue-600 dark:text-hawkes-blue-400 shrink-0" />
               <div className="min-w-0">
-                <p className="text-sm text-victoria-700">{labelKey ? t(labelKey) : label}</p>
-                <p className="font-semibold text-victoria-900 break-words">
+                <p className="text-sm text-victoria-700 dark:text-victoria-300">{labelKey ? t(labelKey) : label}</p>
+                <p className="font-semibold text-victoria-900 dark:text-victoria-50 break-words">
                   <bdi>{valueKey ? t(valueKey) : value}</bdi>
                 </p>
               </div>
             </>
           );
-          const base = 'bg-white/50 rounded-xl p-4 flex items-center gap-4';
+          const base = 'bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 flex items-center gap-4';
           const card = href ? (
             <a
               href={href}
               {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-              className={`${base} hover:bg-white/80 transition-colors`}
+              className={`${base} hover:bg-white/80 dark:hover:bg-victoria-800 transition-colors`}
             >
               {content}
             </a>

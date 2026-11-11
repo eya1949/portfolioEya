@@ -100,11 +100,11 @@ function SkillRow({ name, icon: Icon, level, index }) {
   return (
     <li>
       <div className="flex items-center gap-2 mb-1">
-        <Icon size={18} className="text-hawkes-blue-600 shrink-0" aria-hidden="true" />
-        <span className="flex-1 text-sm font-medium text-victoria-900">
+        <Icon size={18} className="text-hawkes-blue-600 dark:text-hawkes-blue-400 shrink-0" aria-hidden="true" />
+        <span className="flex-1 text-sm font-medium text-victoria-900 dark:text-victoria-50">
           <bdi>{name}</bdi>
         </span>
-        <span className="text-xs font-semibold text-hawkes-blue-700">
+        <span className="text-xs font-semibold text-hawkes-blue-700 dark:text-hawkes-blue-300">
           <bdi>{level}%</bdi>
         </span>
       </div>
@@ -114,7 +114,7 @@ function SkillRow({ name, icon: Icon, level, index }) {
         aria-valuenow={level}
         aria-valuemin={0}
         aria-valuemax={100}
-        className="h-1.5 rounded-full bg-victoria-700/10 overflow-hidden"
+        className="h-1.5 rounded-full bg-victoria-700/10 dark:bg-white/10 overflow-hidden"
       >
         <motion.div
           initial={{ width: 0 }}
@@ -139,10 +139,10 @@ export default function Capacites() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
         {skills.map(({ id, icon: Icon, items }, i) => (
-          <Reveal key={id} index={i} className="bg-white/50 rounded-xl p-4 flex flex-col gap-4">
+          <Reveal key={id} index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <Icon size={22} className="text-hawkes-blue-600" />
-              <h2 className="font-semibold text-victoria-900">{t(`skills.categories.${id}`)}</h2>
+              <Icon size={22} className="text-hawkes-blue-600 dark:text-hawkes-blue-400" />
+              <h2 className="font-semibold text-victoria-900 dark:text-victoria-50">{t(`skills.categories.${id}`)}</h2>
             </div>
             <ul className="space-y-3">
               {items.map((item, j) => (
@@ -158,9 +158,9 @@ export default function Capacites() {
       </Reveal>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {languages.map(({ id, level }, i) => (
-          <Reveal key={id} index={i} className="bg-white/50 rounded-xl p-4 text-center">
-            <p className="font-semibold text-victoria-900">{t(`skills.langNames.${id}`)}</p>
-            <p className="text-victoria-700 text-sm">{t(`skills.levels.${level}`)}</p>
+          <Reveal key={id} index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 text-center">
+            <p className="font-semibold text-victoria-900 dark:text-victoria-50">{t(`skills.langNames.${id}`)}</p>
+            <p className="text-victoria-700 dark:text-victoria-300 text-sm">{t(`skills.levels.${level}`)}</p>
           </Reveal>
         ))}
       </div>
