@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import me from '../assets/me.jpg'; // photo dans src/assets/me.jpg
 import { LANGUAGES } from '../i18n';
 import useTheme from '../hooks/useTheme';
-import useIsMobile from '../hooks/useIsMobile';
+import useIsMobile from '../hooks/Useismobile';
 
 const SidebarContext = createContext({ open: true, closeMobile: () => {} });
 
