@@ -12,7 +12,9 @@
     "collapse": "Replier le menu",
     "expand": "Déplier le menu",
     "language": "Changer de langue",
-    "theme": "Changer de thème"
+    "theme": "Changer de thème",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "about": {
     "hello": "Salut 👋",

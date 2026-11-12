@@ -6,7 +6,7 @@ import PageLayout from '../Components/PageLayout';
 import SectionTitle from '../Components/SectionTitle';
 import Reveal from '../Components/Reveal';
 import Card from '../Components/Card';
-import cvFile from '../assets/Bacharou_Aya.pdf'; // CV dans src/assets/
+import cvFile from '../assets/Bacharou_Aya.pdf'; 
 
 export default function About() {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ export default function About() {
     <PageLayout>
       <Reveal>
         <p className="text-xl text-hawkes-blue-600 dark:text-hawkes-blue-400 font-semibold mb-2 text-center">{t('about.hello')}</p>
-        <h1 className="text-3xl font-bold text-victoria-900 dark:text-victoria-50 text-center mb-4">
+        <h1 className="text-2xl sm:text-3xl font-bold text-victoria-900 dark:text-victoria-50 text-center mb-4">
           {t('about.iam', { name: 'Aya Bacharou' })}
         </h1>
 

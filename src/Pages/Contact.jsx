@@ -25,7 +25,7 @@ export default function Contact() {
         <p className="text-victoria-800 dark:text-victoria-200 leading-7">{t('contact.intro')}</p>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {contacts.map(({ id, icon: Icon, label, labelKey, value, valueKey, href, external }, i) => {
           const content = (
             <>

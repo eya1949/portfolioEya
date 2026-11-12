@@ -12,7 +12,9 @@
     "collapse": "Collapse menu",
     "expand": "Expand menu",
     "language": "Change language",
-    "theme": "Change theme"
+    "theme": "Change theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "about": {
     "hello": "Hi 👋",

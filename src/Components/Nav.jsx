@@ -46,7 +46,7 @@ export default function Nav() {
   return (
     <Router>
       <MotionConfig reducedMotion="user">
-        <div className="flex h-screen overflow-hidden">
+        <div className="flex flex-col md:flex-row h-[100dvh] overflow-hidden">
           <Menu>
             <SidebarItem to="/" icon={<UserCircle size={26} />} text={t('nav.about')} />
             <SidebarItem to="/education" icon={<GraduationCap size={26} />} text={t('nav.education')} />
@@ -56,7 +56,7 @@ export default function Nav() {
             <SidebarItem to="/contact" icon={<PenSquare size={26} />} text={t('nav.contact')} />
           </Menu>
 
-          <main className="flex-1 min-w-0 h-screen p-4 overflow-hidden">
+          <main className="flex-1 min-w-0 min-h-0 p-2 sm:p-4 overflow-hidden">
             <AnimatedRoutes />
           </main>
         </div>

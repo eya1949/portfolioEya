@@ -41,7 +41,7 @@ export default function Realisation() {
         {projects.map(({ id, company, tech }, i) => {
           const points = t(`projects.items.${id}.points`, { returnObjects: true });
           return (
-            <Reveal key={id} index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-5 flex flex-col gap-3">
+            <Reveal key={id} index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 sm:p-5 flex flex-col gap-3">
               <div>
                 <p className="text-sm text-hawkes-blue-700 dark:text-hawkes-blue-300 font-medium">{company}</p>
                 <h2 className="text-xl font-bold text-victoria-900 dark:text-victoria-50">{t(`projects.items.${id}.title`)}</h2>

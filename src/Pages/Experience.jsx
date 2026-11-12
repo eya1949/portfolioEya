@@ -33,7 +33,7 @@ export default function Experience() {
               <span className="absolute -start-[17px] flex items-center justify-center w-8 h-8 rounded-full bg-hawkes-blue-600 text-white">
                 <BriefcaseBusiness size={16} />
               </span>
-              <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-5 flex flex-col gap-3">
+              <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 sm:p-5 flex flex-col gap-3">
                 <div>
                   <h2 className="text-xl font-bold text-victoria-900 dark:text-victoria-50">{t(`experience.jobs.${id}.role`)}</h2>
                   <p className="text-hawkes-blue-700 dark:text-hawkes-blue-300 font-medium">{company}</p>

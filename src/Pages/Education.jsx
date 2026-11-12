@@ -29,7 +29,7 @@ export default function Education() {
               <span className="absolute -start-[17px] flex items-center justify-center w-8 h-8 rounded-full bg-hawkes-blue-600 text-white">
                 <GraduationCap size={16} />
               </span>
-              <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-5">
+              <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 sm:p-5">
                 <p className="text-sm text-victoria-700 dark:text-victoria-300">
                   <bdi>{year}</bdi>
                 </p>

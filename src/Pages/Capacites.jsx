@@ -137,7 +137,7 @@ export default function Capacites() {
         <SectionTitle strong={t('skills.titleStrong')}>{t('skills.titleRest')}</SectionTitle>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
         {skills.map(({ id, icon: Icon, items }, i) => (
           <Reveal key={id} index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 flex flex-col gap-4">
             <div className="flex items-center gap-2">
