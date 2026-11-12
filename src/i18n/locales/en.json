@@ -18,7 +18,7 @@
   },
   "about": {
     "hello": "Hi 👋",
-    "iam": "I'm {{name}}",
+    "iam": "I'm Aya Bacharou",
     "location": "Morocco",
     "aboutStrong": "A little",
     "aboutRest": "about me...",
@@ -174,5 +174,23 @@
     "phone": "Phone",
     "location": "Location",
     "locationValue": "Oulfa, Casablanca, Morocco"
+  },
+  "interests": {
+    "hackathons": {
+      "title": "Hackathons & challenges",
+      "description": "Taking part in coding competitions and solving technical challenges."
+    },
+    "openSource": {
+      "title": "Open source",
+      "description": "Contributing to open source projects to share and grow my skills."
+    },
+    "reading": {
+      "title": "Reading & learning",
+      "description": "Exploring books on tech, personal development and fiction."
+    },
+    "events": {
+      "title": "Events & meetups",
+      "description": "Attending conferences and meetups and staying connected to the tech community."
+    }
   }
 }

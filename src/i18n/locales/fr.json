@@ -18,10 +18,10 @@
   },
   "about": {
     "hello": "Salut 👋",
-    "iam": "Je suis {{name}}",
+    "iam": "Je suis Aya Bacharou",
     "location": "Maroc",
-    "aboutStrong": "Un peu",
-    "aboutRest": "à propos de moi...",
+    "aboutStrong": "À propos",
+    "aboutRest": "de moi...",
     "bio1": "Développeuse Full Stack avec plus de 2 ans d’expérience professionnelle dans le développement et la maintenance d’applications web et de systèmes d’information hospitaliers (HIS).",
     "bio2": "J’interviens principalement sur le développement back-end avec <hl>PHP</hl> et <hl>Symfony</hl>, ainsi que sur le front-end avec <hl>React.js</hl>. J’ai également une expérience dans le développement d’applications MERN, la création d’API REST et la gestion de bases de données PostgreSQL et MongoDB.",
     "interestsStrong": "Intérêts",
@@ -174,5 +174,23 @@
     "phone": "Téléphone",
     "location": "Localisation",
     "locationValue": "Oulfa, Casablanca, Maroc"
+  },
+  "interests": {
+    "hackathons": {
+      "title": "Hackathons & défis",
+      "description": "Participer à des compétitions de code et résoudre des challenges techniques."
+    },
+    "openSource": {
+      "title": "Open source",
+      "description": "Contribuer à des projets open source pour partager et enrichir mes compétences."
+    },
+    "reading": {
+      "title": "Lecture & apprentissage",
+      "description": "Explorer des livres sur la tech, le développement personnel et la fiction."
+    },
+    "events": {
+      "title": "Événements & meetups",
+      "description": "Assister à des conférences, des meetups et rester connecté à la communauté tech."
+    }
   }
 }

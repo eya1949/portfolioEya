@@ -16,7 +16,7 @@ export default function About() {
       <Reveal>
         <p className="text-xl text-hawkes-blue-600 dark:text-hawkes-blue-400 font-semibold mb-2 text-center">{t('about.hello')}</p>
         <h1 className="text-2xl sm:text-3xl font-bold text-victoria-900 dark:text-victoria-50 text-center mb-4">
-          {t('about.iam', { name: 'Aya Bacharou' })}
+          {t('about.iam')}
         </h1>
 
         <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
