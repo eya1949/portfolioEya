@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, ChevronLeft, Menu as MenuIcon, Moon, Sun, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import me from '../assets/me.jpg'; // photo dans src/assets/me.jpg
+import me from '../assets/aya.jpg'; 
 import { LANGUAGES } from '../i18n';
 import useTheme from '../hooks/useTheme';
 import useIsMobile from '../hooks/Useismobile';
