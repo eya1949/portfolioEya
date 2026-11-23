@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, ChevronLeft, Menu as MenuIcon, Moon, Sun, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import me from '../assets/aya.jpg'; 
+import me from '../assets/aya.png'; 
 import { LANGUAGES } from '../i18n';
 import useTheme from '../hooks/useTheme';
 import useIsMobile from '../hooks/Useismobile';
@@ -113,10 +113,13 @@ export default function Menu({ children }) {
               }`}
             >
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-hawkes-blue-600 flex items-center justify-center text-white font-bold text-2xl">
-                AB
+                <span aria-hidden="true">AB</span>
                 <img
                   src={me}
-                  alt="Aya Bacharou"
+                  alt="Portrait d'Aya Bacharou"
+                  width="640"
+                  height="640"
+                  decoding="async"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -132,7 +135,7 @@ export default function Menu({ children }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 dir="ltr"
-                className="mt-4 md:mt-5 text-xl md:text-2xl font-bold tracking-wide"
+                className="font-display mt-4 md:mt-5 text-xl md:text-2xl font-bold tracking-wide"
               >
                 <span className="text-victoria-950 dark:text-white">Aya </span>
                 <span className="text-hawkes-blue-600 dark:text-hawkes-blue-400">Bacharou</span>
@@ -168,6 +171,10 @@ export default function Menu({ children }) {
               <img
                 src={`https://flagcdn.com/w40/${current.flag}.png`}
                 alt={current.label}
+                width="24"
+                height="24"
+                loading="lazy"
+                decoding="async"
                 className="w-6 h-6 rounded-full object-cover"
               />
               {expanded && <ChevronDown size={16} />}
@@ -185,7 +192,15 @@ export default function Menu({ children }) {
                         l.code === current.code ? 'font-bold text-hawkes-blue-700 dark:text-hawkes-blue-300' : ''
                       }`}
                     >
-                      <img src={`https://flagcdn.com/w40/${l.flag}.png`} alt="" className="w-5 h-5 rounded-full object-cover" />
+                      <img
+                        src={`https://flagcdn.com/w40/${l.flag}.png`}
+                        alt=""
+                        width="20"
+                        height="20"
+                        loading="lazy"
+                        decoding="async"
+                        className="w-5 h-5 rounded-full object-cover"
+                      />
                       {l.label}
                     </button>
                   </li>

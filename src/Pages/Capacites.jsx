@@ -104,7 +104,7 @@ function SkillRow({ name, icon: Icon, level, index }) {
         <span className="flex-1 text-sm font-medium text-victoria-900 dark:text-victoria-50">
           <bdi>{name}</bdi>
         </span>
-        <span className="text-xs font-semibold text-hawkes-blue-700 dark:text-hawkes-blue-300">
+        <span className="text-xs font-semibold text-hawkes-blue-700 dark:text-hawkes-blue-200">
           <bdi>{level}%</bdi>
         </span>
       </div>
@@ -114,14 +114,14 @@ function SkillRow({ name, icon: Icon, level, index }) {
         aria-valuenow={level}
         aria-valuemin={0}
         aria-valuemax={100}
-        className="h-1.5 rounded-full bg-victoria-700/10 dark:bg-white/10 overflow-hidden"
+        className="h-2 rounded-full bg-victoria-700/15 dark:bg-white/15 overflow-hidden"
       >
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 + index * 0.05, ease: 'easeOut' }}
-          className="h-full rounded-full bg-hawkes-blue-600"
+          className="h-full rounded-full bg-hawkes-blue-600 dark:bg-hawkes-blue-400"
         />
       </div>
     </li>

@@ -23,13 +23,25 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // ESLint ne « voit » pas les identifiants utilisés uniquement dans du JSX
+      // (`motion.div`, `<Icon />`) : on ignore donc ces formes.
+      'no-unused-vars': [
+        'error',
+        {
+          varsIgnorePattern: '^[A-Z_]|^motion$',
+          argsIgnorePattern: '^[A-Z_]',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
     },
-    "eslint.option":{setting:true}
   },
-
+  {
+    // Fichiers de configuration exécutés par Node, pas par le navigateur.
+    files: ['*.config.js'],
+    languageOptions: { globals: globals.node },
+  },
 ]

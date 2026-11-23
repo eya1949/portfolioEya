@@ -2,99 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* ── POLICES ────────────────────────────────────────────────────────────────
+   Chemins relatifs : Vite les hache et les copie dans le build.
+   `swap` affiche tout de suite la police de secours (pas de texte invisible). */
 
+/* ── LOUBAG ── */
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-UltraLight.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Thin.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loubag';
+  src: url('./assets/fonts/Loubag-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
-html {
-  scroll-behavior: smooth;
+/* ── AKZIDENZ-GROTESK ── */
+@font-face {
+  font-family: 'Akzidenz-Grotesk';
+  src: url('./assets/fonts/Akzidenz-grotesk-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk';
+  src: url('./assets/fonts/Akzidenz-grotesk-roman.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk';
+  src: url('./assets/fonts/Akzidenz-grotesk-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akzidenz-Grotesk';
+  src: url('./assets/fonts/Akzidenz-grotesk-black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── BASE ─────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Akzidenz-Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Empêche le rebond horizontal quand le tiroir mobile sort de l'écran */
+    overflow-x: hidden;
+  }
+
+  /* Loubag (via la classe `font-display`) ne sert qu'aux grands titres */
+  h1 {
+    font-family: 'Loubag', ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: theme('colors.hawkes-blue.600');
+    color: #fff;
+  }
+
+  /* Anneau de focus visible uniquement au clavier */
+  :focus-visible {
+    outline: 2px solid theme('colors.hawkes-blue.600');
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .dark ::selection {
+    background-color: theme('colors.hawkes-blue.400');
+    color: theme('colors.victoria.950');
+  }
+}
+
+/* Respecte le réglage système « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* old Edge / IE */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none; /* old Edge / IE */
+  scrollbar-width: none; /* Firefox */
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, new Edge */
+  display: none; /* Chrome, Safari, new Edge */
 }
-/* ── LOUBAG ── */
-@font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-UltraLight.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Thin.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Loubag';
-    src: url('/src/assets/fonts/Loubag-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  /* ── AKZIDENZ-GROTESK ── */
-  @font-face {
-    font-family: 'Akzidenz-Grotesk';
-    src: url('/src/assets/fonts/Akzidenz-grotesk-black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Akzidenz-Grotesk';
-    src: url('/src/assets/fonts/Akzidenz-grotesk-bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Akzidenz-Grotesk';
-    src: url('/src/assets/fonts/Akzidenz-grotesk-light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Akzidenz-Grotesk';
-    src: url('/src/assets/fonts/Akzidenz-grotesk-roman.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-  

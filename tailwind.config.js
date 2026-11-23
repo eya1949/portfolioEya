@@ -5,6 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        // `sans` est la police par défaut du site (définie aussi dans index.css)
+        sans: ['Akzidenz-Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        display: ['Loubag', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         loubag: ['Loubag', 'sans-serif'],
         akzidenz: ['Akzidenz-Grotesk', 'sans-serif'],
       },

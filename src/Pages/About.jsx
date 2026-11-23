@@ -41,7 +41,7 @@ export default function About() {
       </Reveal>
 
       <Reveal index={1} className="space-y-4">
-        <SectionTitle strong={t('about.aboutStrong')}>{t('about.aboutRest')}</SectionTitle>
+        <SectionTitle as="h2" strong={t('about.aboutStrong')}>{t('about.aboutRest')}</SectionTitle>
         <p className="text-2xl sm:text-3xl font-extrabold leading-snug text-hawkes-blue-700 dark:text-hawkes-blue-300">
           {t('about.tagline')}
         </p>
@@ -72,7 +72,7 @@ export default function About() {
       </Reveal>
 
       <Reveal index={2} className="space-y-4">
-        <SectionTitle strong={t('about.interestsStrong')}>{t('about.interestsRest')}</SectionTitle>
+        <SectionTitle as="h2" strong={t('about.interestsStrong')}>{t('about.interestsRest')}</SectionTitle>
         <Card />
       </Reveal>
     </PageLayout>

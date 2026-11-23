@@ -1,22 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aya Bacharou</title>
+
+  <title>Aya Bacharou — Développeuse Full Stack PHP / Symfony / React</title>
+  <meta name="description"
+    content="Portfolio d'Aya Bacharou, développeuse Full Stack à Casablanca : PHP, Symfony, React.js, Node.js, PostgreSQL et MongoDB. Plus de 2 ans d'expérience sur des applications métier et des systèmes d'information hospitaliers." />
+  <meta name="author" content="Aya Bacharou" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#fae9f0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#2a2442" media="(prefers-color-scheme: dark)" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Aya Bacharou" />
+  <meta property="og:title" content="Aya Bacharou — Développeuse Full Stack" />
+  <meta property="og:description"
+    content="Développeuse Full Stack à Casablanca : PHP, Symfony, React.js, Node.js, PostgreSQL et MongoDB." />
+  <meta property="og:image" content="%VITE_SITE_URL%/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aya Bacharou, développeuse Full Stack" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aya Bacharou — Développeuse Full Stack" />
+  <meta name="twitter:description"
+    content="Développeuse Full Stack à Casablanca : PHP, Symfony, React.js, Node.js, PostgreSQL et MongoDB." />
+  <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.jpg" />
+
+  <!-- Les drapeaux du sélecteur de langue viennent d'un autre domaine -->
+  <link rel="preconnect" href="https://flagcdn.com" crossorigin />
+  <link rel="dns-prefetch" href="https://flagcdn.com" />
+
+  <!-- Données structurées (Google comprend alors qu'il s'agit d'une personne) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aya Bacharou",
+    "jobTitle": "Développeuse Full Stack",
+    "description": "Développeuse Full Stack spécialisée en PHP, Symfony, React.js et Node.js.",
+    "email": "mailto:ayabcr.dev@gmail.com",
+    "telephone": "+212680084122",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Casablanca",
+      "addressCountry": "MA"
+    },
+    "knowsLanguage": ["fr", "en", "ar"],
+    "knowsAbout": ["PHP", "Symfony", "React.js", "Node.js", "TypeScript", "PostgreSQL", "MongoDB", "Docker"],
+    "sameAs": ["https://github.com/eya1949", "https://www.linkedin.com/in/aya-bacharou/"]
+  }
+  </script>
+
+  <!-- Applique le thème avant le premier rendu pour éviter le flash clair -->
   <script>
     try {
       var t = localStorage.getItem('theme');
-      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches))
-        document.documentElement.classList.add('dark');
+      var dark = t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark');
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
     } catch (e) { }
   </script>
 </head>
 
 <body>
   <div id="root"></div>
+  <noscript>
+    <p style="font-family: system-ui, sans-serif; padding: 2rem; text-align: center">
+      Ce portfolio a besoin de JavaScript. Vous pouvez me contacter directement :
+      <a href="mailto:ayabcr.dev@gmail.com">ayabcr.dev@gmail.com</a>.
+    </p>
+  </noscript>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

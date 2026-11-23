@@ -190,7 +190,42 @@
     },
     "events": {
       "title": "Événements & meetups",
-      "description": "Assister à des conférences, des meetups et rester connecté à la communauté tech."
+      "description": "Assister à des conférences, des meetups et rester connectée à la communauté tech."
     }
+  },
+  "meta": {
+    "about": {
+      "title": "Aya Bacharou — Développeuse Full Stack PHP / Symfony / React",
+      "description": "Portfolio d’Aya Bacharou, développeuse Full Stack à Casablanca : PHP, Symfony, React.js, Node.js, PostgreSQL et MongoDB. Plus de 2 ans d’expérience."
+    },
+    "education": {
+      "title": "Parcours académique — Aya Bacharou",
+      "description": "La formation d’Aya Bacharou : MERN Full Stack (JobInTech), école 1337, Technicien Spécialisé en développement informatique (ISTA) et baccalauréat scientifique."
+    },
+    "skills": {
+      "title": "Compétences techniques — Aya Bacharou",
+      "description": "Compétences d’Aya Bacharou : JavaScript, TypeScript, PHP, React.js, Next.js, Node.js, Symfony, PostgreSQL, MongoDB, Docker, Git et méthodes Agile."
+    },
+    "experience": {
+      "title": "Expérience professionnelle — Aya Bacharou",
+      "description": "Le parcours d’Aya Bacharou : développeuse Full Stack chez Mibtech (Akdital Holding) sur un HIS et une plateforme de consolidation de données hospitalières, puis stage MERN chez ARK-X."
+    },
+    "projects": {
+      "title": "Réalisations — Aya Bacharou",
+      "description": "Les projets d’Aya Bacharou : système d’information hospitalier, plateforme de consolidation des données hospitalières, NabadyPro Card et NabadyBot."
+    },
+    "contact": {
+      "title": "Contact — Aya Bacharou",
+      "description": "Contacter Aya Bacharou, développeuse Full Stack à Casablanca, par email, téléphone, LinkedIn ou GitHub."
+    },
+    "notFound": {
+      "title": "Page introuvable — Aya Bacharou",
+      "description": "Cette page n’existe pas ou a été déplacée. Revenez à l’accueil du portfolio d’Aya Bacharou."
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "message": "La page que vous cherchez n’existe pas ou a été déplacée. Pas d’inquiétude, le reste du portfolio est toujours là.",
+    "backHome": "Retour à l’accueil"
   }
 }

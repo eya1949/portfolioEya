@@ -29,8 +29,8 @@ export default function Experience() {
         {jobs.map(({ id, company, tech }, i) => {
           const points = t(`experience.jobs.${id}.points`, { returnObjects: true });
           return (
-            <li key={id} className="ms-6">
-              <span className="absolute -start-[17px] flex items-center justify-center w-8 h-8 rounded-full bg-hawkes-blue-600 text-white">
+            <li key={id} className="relative ms-6">
+              <span aria-hidden="true" className="absolute -start-[17px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-hawkes-blue-600 text-white shadow-sm">
                 <BriefcaseBusiness size={16} />
               </span>
               <Reveal index={i} className="bg-white/50 dark:bg-victoria-800/60 rounded-xl p-4 sm:p-5 flex flex-col gap-3">

@@ -13,16 +13,17 @@ export default function Card() {
   const { t } = useTranslation();
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2">
       {ITEMS.map(({ key, Icon }) => (
-        <div key={key} className="bg-illusion-50 rounded-2xl shadow-md p-4">
-          <div className="flex items-center mb-2 text-victoria-900">
-            <Icon className="me-2" />
-            <span className="text-lg font-semibold">
-              {t(`interests.${key}.title`)}
-            </span>
+        <div
+          key={key}
+          className="rounded-2xl bg-illusion-50 p-4 shadow-md transition-shadow hover:shadow-lg dark:bg-victoria-800/60 dark:shadow-none dark:ring-1 dark:ring-white/10"
+        >
+          <div className="mb-2 flex items-center text-victoria-900 dark:text-victoria-50">
+            <Icon aria-hidden="true" className="me-2 shrink-0" />
+            <span className="text-lg font-semibold">{t(`interests.${key}.title`)}</span>
           </div>
-          <span className="block text-sm text-victoria-700">
+          <span className="block text-sm text-victoria-700 dark:text-victoria-300">
             {t(`interests.${key}.description`)}
           </span>
         </div>

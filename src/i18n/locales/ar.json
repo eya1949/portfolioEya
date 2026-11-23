@@ -192,5 +192,40 @@
       "title": "الفعاليات واللقاءات",
       "description": "حضور المؤتمرات واللقاءات التقنية والبقاء على تواصل مع مجتمع التقنية."
     }
+  },
+  "meta": {
+    "about": {
+      "title": "آية بشر — مطورة Full Stack (PHP، Symfony، React)",
+      "description": "الموقع الشخصي لآية بشر، مطورة Full Stack في الدار البيضاء: PHP وSymfony وReact.js وNode.js وPostgreSQL وMongoDB. أكثر من سنتين من الخبرة."
+    },
+    "education": {
+      "title": "المسار الأكاديمي — آية بشر",
+      "description": "تكوين آية بشر: MERN Full Stack (JobInTech)، مدرسة 1337، دبلوم التقني المتخصص في تطوير المعلوميات (ISTA)، وباكالوريا علمية."
+    },
+    "skills": {
+      "title": "المهارات التقنية — آية بشر",
+      "description": "مهارات آية بشر: JavaScript وTypeScript وPHP وReact.js وNext.js وNode.js وSymfony وPostgreSQL وMongoDB وDocker وGit ومنهجيات Agile."
+    },
+    "experience": {
+      "title": "الخبرة المهنية — آية بشر",
+      "description": "مسار آية بشر: مطورة Full Stack في Mibtech (Akdital Holding) على نظام معلومات المستشفيات ومنصة توحيد البيانات الاستشفائية، ثم تدريب MERN في ARK-X."
+    },
+    "projects": {
+      "title": "المشاريع — آية بشر",
+      "description": "مشاريع آية بشر: نظام معلومات المستشفيات، منصة توحيد البيانات الاستشفائية، NabadyPro Card وNabadyBot."
+    },
+    "contact": {
+      "title": "تواصل — آية بشر",
+      "description": "تواصل مع آية بشر، مطورة Full Stack في الدار البيضاء، عبر البريد الإلكتروني أو الهاتف أو LinkedIn أو GitHub."
+    },
+    "notFound": {
+      "title": "الصفحة غير موجودة — آية بشر",
+      "description": "هذه الصفحة غير موجودة أو تم نقلها. عد إلى الصفحة الرئيسية لموقع آية بشر."
+    }
+  },
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "message": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها. لا بأس، بقية أجزاء الموقع في مكانها.",
+    "backHome": "العودة إلى الصفحة الرئيسية"
   }
 }

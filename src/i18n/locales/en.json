@@ -192,5 +192,40 @@
       "title": "Events & meetups",
       "description": "Attending conferences and meetups and staying connected to the tech community."
     }
+  },
+  "meta": {
+    "about": {
+      "title": "Aya Bacharou — Full Stack Developer (PHP, Symfony, React)",
+      "description": "Portfolio of Aya Bacharou, Full Stack Developer in Casablanca: PHP, Symfony, React.js, Node.js, PostgreSQL and MongoDB. Over 2 years of experience."
+    },
+    "education": {
+      "title": "Education — Aya Bacharou",
+      "description": "Aya Bacharou's background: MERN Full Stack training (JobInTech), 1337 school, Specialized Technician diploma in software development (ISTA) and a science baccalaureate."
+    },
+    "skills": {
+      "title": "Technical skills — Aya Bacharou",
+      "description": "Aya Bacharou's skills: JavaScript, TypeScript, PHP, React.js, Next.js, Node.js, Symfony, PostgreSQL, MongoDB, Docker, Git and Agile methods."
+    },
+    "experience": {
+      "title": "Professional experience — Aya Bacharou",
+      "description": "Aya Bacharou's career: Full Stack Developer at Mibtech (Akdital Holding) working on a HIS and a hospital data consolidation platform, then a MERN internship at ARK-X."
+    },
+    "projects": {
+      "title": "Projects — Aya Bacharou",
+      "description": "Aya Bacharou's projects: hospital information system, hospital data consolidation platform, NabadyPro Card and NabadyBot."
+    },
+    "contact": {
+      "title": "Contact — Aya Bacharou",
+      "description": "Get in touch with Aya Bacharou, Full Stack Developer in Casablanca, by email, phone, LinkedIn or GitHub."
+    },
+    "notFound": {
+      "title": "Page not found — Aya Bacharou",
+      "description": "This page does not exist or has been moved. Head back to the home page of Aya Bacharou's portfolio."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist or has been moved. Don't worry, the rest of the portfolio is still here.",
+    "backHome": "Back to home"
   }
 }
